@@ -1,4 +1,4 @@
-package edu.psmw.weatherapp.data
+package edu.psmw.weatherapp.data.response
 
 
 import com.google.gson.annotations.SerializedName
