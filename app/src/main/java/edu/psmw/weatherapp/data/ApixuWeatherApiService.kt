@@ -1,7 +1,7 @@
 package edu.psmw.weatherapp.data
 
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
-import edu.psmw.weatherapp.data.response.CurrentWeatherResponse
+import edu.psmw.weatherapp.data.network.response.CurrentWeatherResponse
 import kotlinx.coroutines.Deferred
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
