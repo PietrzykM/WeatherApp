@@ -21,3 +21,4 @@ interface CurrentWeatherDao {
     @Query("select * from current_weather where id = $CURRENT_WEATHER_ID")
     fun getWeatherImperial(): LiveData<ImperialCurrentWeatherEntry>
 }
+

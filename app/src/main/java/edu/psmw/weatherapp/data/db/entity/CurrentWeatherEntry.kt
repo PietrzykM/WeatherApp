@@ -19,13 +19,13 @@ data class CurrentWeatherEntry(
     val feelslikeC: Double,
     @SerializedName("feelslike_f")
     val feelslikeF: Double,
-    @SerializedName("gust_kph")
-    val gustKph: Double,
-    @SerializedName("gust_mph")
-    val gustMph: Double,
+//    @SerializedName("gust_kph")
+//    val gustKph: Double,
+//    @SerializedName("gust_mph")
+//    val gustMph: Double,
 //    val humidity: Int,
-    @SerializedName("is_day")
-    val isDay: Int,
+//    @SerializedName("is_day")
+//    val isDay: Int,
 //    @SerializedName("last_updated")
 //    val lastUpdated: String,
 //    @SerializedName("last_updated_epoch")
@@ -42,7 +42,7 @@ data class CurrentWeatherEntry(
     val tempC: Double,
     @SerializedName("temp_f")
     val tempF: Double,
-    val uv: Double,
+//    val uv: Double,
     @SerializedName("vis_km")
     val visKm: Double,
     @SerializedName("vis_miles")

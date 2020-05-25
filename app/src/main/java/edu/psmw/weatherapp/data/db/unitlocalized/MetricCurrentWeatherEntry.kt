@@ -9,7 +9,7 @@ data class MetricCurrentWeatherEntry (
     override val conditionText: String,
     @ColumnInfo(name = "condition_icon")
     override val conditionIconUrl: String,
-    @ColumnInfo(name = "windKMph")
+    @ColumnInfo(name = "windKph")
     override val windSpeed: Double,
     @ColumnInfo(name = "windDir")
     override val windDirection: String,
@@ -19,4 +19,5 @@ data class MetricCurrentWeatherEntry (
     override val feelsLikeTemperature: Double,
     @ColumnInfo(name = "visKm")
     override val visibilityDistance: Double
+
 ) : UntSpecificCurrentWeaterEntry
