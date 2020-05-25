@@ -20,4 +20,4 @@ data class MetricCurrentWeatherEntry (
     @ColumnInfo(name = "visKm")
     override val visibilityDistance: Double
 
-) : UntSpecificCurrentWeaterEntry
+) : UnitSpecificCurrentWeaterEntry

@@ -1,6 +1,6 @@
 package edu.psmw.weatherapp.data.db.unitlocalized
 
-interface UntSpecificCurrentWeaterEntry {
+interface UnitSpecificCurrentWeaterEntry {
     val temperature:Double
     val conditionText: String
     val conditionIconUrl: String
