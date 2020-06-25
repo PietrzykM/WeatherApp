@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    /**
+    * Rozdzielenie wartości systemowej, od wartości przedstawianej użytkownikowi zbudowane w
+    * celu póniejszych zmian komunikatów zwrotnych bez konieczności zmiany istniejącego kodu
+    * odpowiadającego za logikę aplikacji
+    */
+
+    <string-array name="unitSystemValues">
+        <item>METRIC</item>
+        <item>IMPERIAL</item>
+    </string-array>
+
+    <string-array name="unitSystemEntries">
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+</resources>

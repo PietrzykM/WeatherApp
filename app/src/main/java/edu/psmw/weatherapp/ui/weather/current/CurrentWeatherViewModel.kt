@@ -1,14 +1,21 @@
 package edu.psmw.weatherapp.ui.weather.current
 
 import androidx.lifecycle.ViewModel
+import edu.psmw.weatherapp.data.provider.UnitProvider
 import edu.psmw.weatherapp.data.repository.ForecastRepository
 import edu.psmw.weatherapp.internal.UnitSystem
 import edu.psmw.weatherapp.internal.lazyDefferd
 
+/**
+ *  ViewModel of CurrentWeather panel
+ * overrides functions: onCreatePreferences onActivityCreated
+ */
+
 class CurrentWeatherViewModel(
-    private val forecastRepository: ForecastRepository
+    private val forecastRepository: ForecastRepository,
+    unitProvider: UnitProvider
 ) : ViewModel() {
-    private val unitSystem = UnitSystem.METRIC//przygotowanie pod ustawienia systemowe przez użytkownika
+    private val unitSystem = unitProvider.getUnitSystem()
 
     val isMetric: Boolean
         get() = unitSystem == UnitSystem.METRIC

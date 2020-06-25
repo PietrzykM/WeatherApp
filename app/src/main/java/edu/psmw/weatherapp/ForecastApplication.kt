@@ -4,6 +4,8 @@ import android.app.Application
 import com.jakewharton.threetenabp.AndroidThreeTen
 import edu.psmw.weatherapp.data.db.ForecastDatabase
 import edu.psmw.weatherapp.data.network.*
+import edu.psmw.weatherapp.data.provider.UnitProvider
+import edu.psmw.weatherapp.data.provider.UnitProviderImpl
 import edu.psmw.weatherapp.data.repository.ForecastRepository
 import edu.psmw.weatherapp.data.repository.ForecastRepositoryImpl
 import edu.psmw.weatherapp.ui.weather.current.CurrentWeatherViewModelFactory
@@ -25,7 +27,8 @@ class ForecastApplication : Application(), KodeinAware {
         bind() from singleton {ApixuWeatherApiService(instance())}
         bind<WeatherNetworkDataSource>() with singleton  { WeatherNetworkDataSourceImpl(instance()) }
         bind<ForecastRepository>() with singleton  { ForecastRepositoryImpl(instance(),instance()) }
-        bind() from provider { CurrentWeatherViewModelFactory(instance()) }
+        bind<UnitProvider>() with singleton { UnitProviderImpl(instance()) }
+        bind() from provider { CurrentWeatherViewModelFactory(instance(), instance()) }
     }
 
     override fun onCreate() {
