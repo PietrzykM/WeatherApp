@@ -5,6 +5,7 @@ import edu.psmw.weatherapp.data.provider.UnitProvider
 import edu.psmw.weatherapp.data.repository.ForecastRepository
 import edu.psmw.weatherapp.internal.UnitSystem
 import edu.psmw.weatherapp.internal.lazyDefferd
+import edu.psmw.weatherapp.ui.base.WeatherViewModel
 
 /**
  *  ViewModel of CurrentWeather panel
@@ -14,16 +15,10 @@ import edu.psmw.weatherapp.internal.lazyDefferd
 class CurrentWeatherViewModel(
     private val forecastRepository: ForecastRepository,
     unitProvider: UnitProvider
-) : ViewModel() {
-    private val unitSystem = unitProvider.getUnitSystem()
+) : WeatherViewModel(forecastRepository, unitProvider) {
 
-    val isMetric: Boolean
-        get() = unitSystem == UnitSystem.METRIC
 
     val weather by lazyDefferd {
-        forecastRepository.getCurrentWeather(isMetric)
-    }
-    val weatherLocation by lazyDefferd{
-        forecastRepository.getWeatherLocation()
+        forecastRepository.getCurrentWeather(super.isMetricUnit)
     }
 }

@@ -3,10 +3,11 @@ package edu.psmw.weatherapp.data.db
 import android.content.Context
 import androidx.room.*
 import edu.psmw.weatherapp.data.db.entity.CurrentWeatherEntry
+import edu.psmw.weatherapp.data.db.entity.FutureWeaterEntry
 import edu.psmw.weatherapp.data.db.entity.WeatherLocation
 
 @Database(
-    entities = [CurrentWeatherEntry::class, WeatherLocation::class],
+    entities = [CurrentWeatherEntry::class, FutureWeaterEntry::class, WeatherLocation::class],
     version = 1
 )
 
