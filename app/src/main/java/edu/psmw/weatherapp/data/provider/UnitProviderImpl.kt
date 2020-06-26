@@ -12,11 +12,9 @@ import edu.psmw.weatherapp.internal.UnitSystem
 
 const val UNIT_SYSTEM = "UNIT_SYSTEM" //key from preferences.xml
 
-class UnitProviderImpl(context: Context) : UnitProvider {
-    private val appContext = context.applicationContext
+class UnitProviderImpl(context: Context) : PreferenceProvider(context), UnitProvider {
 
-    private val preferences :SharedPreferences
-        get() = PreferenceManager.getDefaultSharedPreferences(appContext)
+
     override fun getUnitSystem(): UnitSystem {
         val selectedName = preferences.getString(UNIT_SYSTEM, UnitSystem.METRIC.name)
         return  UnitSystem.valueOf(selectedName!!)

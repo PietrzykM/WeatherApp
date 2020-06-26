@@ -1,4 +1,4 @@
-package edu.psmw.weatherapp.data.db.unitlocalized
+package edu.psmw.weatherapp.data.db.unitlocalized.current
 
 interface UnitSpecificCurrentWeaterEntry {
     val temperature:Double
