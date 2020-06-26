@@ -2,7 +2,6 @@ package edu.psmw.weatherapp.ui.weather.current
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,14 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 
 import edu.psmw.weatherapp.R
-import edu.psmw.weatherapp.data.network.ApixuWeatherApiService
-import edu.psmw.weatherapp.data.network.ConnectivityInterceptorImpl
-import edu.psmw.weatherapp.data.network.WeatherNetworkDataSourceImpl
 import edu.psmw.weatherapp.internal.glide.GlideApp
 import edu.psmw.weatherapp.ui.base.ScopedFragment
 import kotlinx.android.synthetic.main.current_weather_fragment.*
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
@@ -65,7 +59,7 @@ class CurrentWeatherFragment : ScopedFragment(), KodeinAware {
             updateDayToToday()
             updateTemperatures(it.temperature, it.feelsLikeTemperature)
             updateCondition(it.conditionText)
-            updatePreciptation(it.precipitationVolume)
+            updatePrecipitation(it.precipitationVolume)
             updateWind(it.windDirection,it.windSpeed)
             updateVisibility(it.visibilityDistance)
 
@@ -97,7 +91,7 @@ class CurrentWeatherFragment : ScopedFragment(), KodeinAware {
         textView_condition.text = condition
     }
 
-    private fun updatePreciptation(precipitationVolume: Double){
+    private fun updatePrecipitation(precipitationVolume: Double){
         val unitAbreviation = chooseLocalizedUnitAbbreviation("mm", "in")
         textView_precipitation.text ="Precipitation: $precipitationVolume $unitAbreviation"
     }

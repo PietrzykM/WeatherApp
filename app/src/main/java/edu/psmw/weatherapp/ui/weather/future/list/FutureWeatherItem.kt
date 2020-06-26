@@ -2,9 +2,9 @@ package edu.psmw.weatherapp.ui.weather.future.list
 
 import com.xwray.groupie.kotlinandroidextensions.Item
 import com.xwray.groupie.kotlinandroidextensions.ViewHolder
-import edu.psmw.weatherapp.data.db.unitlocalized.future.UnitSpecificSimpleFutureWeatherEntry
+import edu.psmw.weatherapp.data.db.unitlocalized.future.list.UnitSpecificSimpleFutureWeatherEntry
 import edu.psmw.weatherapp.R
-import edu.psmw.weatherapp.data.db.unitlocalized.future.MetricSimpleFutureWeatherEntry
+import edu.psmw.weatherapp.data.db.unitlocalized.future.list.MetricSimpleFutureWeatherEntry
 import edu.psmw.weatherapp.internal.glide.GlideApp
 import kotlinx.android.synthetic.main.item_future_weather.*
 import org.threeten.bp.format.DateTimeFormatter

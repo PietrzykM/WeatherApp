@@ -1,4 +1,4 @@
-package edu.psmw.weatherapp.data.db.unitlocalized.future
+package edu.psmw.weatherapp.data.db.unitlocalized.future.list
 
 import org.threeten.bp.LocalDate
 
