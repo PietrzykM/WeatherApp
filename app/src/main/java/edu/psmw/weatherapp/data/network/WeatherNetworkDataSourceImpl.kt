@@ -1,4 +1,9 @@
 package edu.psmw.weatherapp.data.network
+/**
+ * Implementacja interfejsu WeatherNetworkDataSource.
+ * Przechytuje dane o aktualnej i prognozowanej pogodzie.
+ */
+
 
 import android.util.Log
 import androidx.lifecycle.LiveData

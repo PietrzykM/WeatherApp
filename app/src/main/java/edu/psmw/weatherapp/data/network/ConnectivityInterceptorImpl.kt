@@ -1,5 +1,11 @@
 package edu.psmw.weatherapp.data.network
 
+/**
+ * Implementacja interfejsu ConnectivityInterceptor.
+ * Przechytuje dane o dostępnej łączności.
+ */
+
+
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities

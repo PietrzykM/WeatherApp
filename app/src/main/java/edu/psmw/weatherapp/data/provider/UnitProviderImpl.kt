@@ -6,8 +6,8 @@ import android.preference.PreferenceManager
 import edu.psmw.weatherapp.internal.UnitSystem
 
 /**
- * UnitProvider implementation
- * has one function which is getting Unit system that is set by user
+ *  Iplementacja interfejsu UnitProvider
+ * pobiera dane o wyborze jednostek przez użytkownika.
  */
 
 const val UNIT_SYSTEM = "UNIT_SYSTEM" //key from preferences.xml

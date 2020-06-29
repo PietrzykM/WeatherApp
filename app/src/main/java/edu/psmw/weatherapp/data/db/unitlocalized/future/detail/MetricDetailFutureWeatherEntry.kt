@@ -1,5 +1,9 @@
 package edu.psmw.weatherapp.data.db.unitlocalized.future.detail
 
+/**
+ * Implementacja interfejsu UnitSpecificDetailFutureWeatherEntry dla systemu metrycznego.
+ */
+
 import androidx.room.ColumnInfo
 import org.threeten.bp.LocalDate
 

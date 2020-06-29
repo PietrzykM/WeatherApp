@@ -6,6 +6,10 @@ import edu.psmw.weatherapp.data.db.entity.CurrentWeatherEntry
 import edu.psmw.weatherapp.data.db.entity.FutureWeaterEntry
 import edu.psmw.weatherapp.data.db.entity.WeatherLocation
 
+/**
+ * Inicjalizacja lokalnej bazy danych projektu.
+ */
+
 @Database(
     entities = [CurrentWeatherEntry::class, FutureWeaterEntry::class, WeatherLocation::class],
     version = 1

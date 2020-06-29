@@ -1,5 +1,11 @@
 package edu.psmw.weatherapp.data.db.unitlocalized.current
 
+/**
+ * Aplikacja pozwala użytkownikowi wybrac pomiędzy systemem merycznym a jednostkami imperialnymi.
+ *  MetricCurrentWeatherEntry tworzy specyfikację dla systemu metrycznego.
+ * Jest to implementacja interfejsu UnitSpecificCurrentWeaterEntry.
+ */
+
 import androidx.room.ColumnInfo
 
 data class MetricCurrentWeatherEntry (

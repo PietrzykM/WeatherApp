@@ -1,5 +1,9 @@
 package edu.psmw.weatherapp.data.repository
 
+/**
+ * Klasa pobierająca dane o obecnej pogodznie, lokalizacji, prognozie na następne dni z innych klas
+ * i obiektów.
+ */
 import androidx.lifecycle.LiveData
 import edu.psmw.weatherapp.data.db.CurrentWeatherDao
 import edu.psmw.weatherapp.data.db.FutureWeatherDao

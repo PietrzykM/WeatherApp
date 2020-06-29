@@ -2,7 +2,11 @@ package edu.psmw.weatherapp.data.db.unitlocalized.future.detail
 
 import org.threeten.bp.LocalDate
 
-
+/**
+ * Interfejs UnitSpecificDetailFutureWeatherEntry tworzy szablon dla implementacji systemu metrycznego
+ * bądź jednostek imperialnych dla dni w najbliższym tygodniu (karta ze szczegółowymi informacjami
+ * na temat konkretnego dnia.
+ */
 
 interface UnitSpecificDetailFutureWeatherEntry {
     val date: LocalDate

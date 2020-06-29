@@ -1,5 +1,9 @@
 package edu.psmw.weatherapp.data.network
 
+/**
+ * interfejs definujący format danych pobrany z zewnętrznego API pogodowego.
+ */
+
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import edu.psmw.weatherapp.data.network.response.CurrentWeatherResponse
 import edu.psmw.weatherapp.data.network.response.FutureWeatherResponse

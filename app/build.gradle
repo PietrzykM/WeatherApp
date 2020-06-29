@@ -5,6 +5,8 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: "kotlin-kapt"
 apply plugin: 'androidx.navigation.safeargs'
 
+
+
 android {
     compileSdkVersion 28
 
@@ -25,6 +27,27 @@ android {
         }
     }
 
+    dokka {
+        outputFormat = 'html'
+        //outputDirectory = "$buildDir/dokka"
+
+        configuration {
+            // Do not output deprecated members
+            skipDeprecated = true
+
+            // Emit warnings about not documented members.
+            reportUndocumented = true
+
+            // Do not create index pages for empty packages
+            skipEmptyPackages = true
+        }
+    }
+
+}
+
+task DocsByDokka (type: org.jetbrains.dokka.gradle.DokkaTask) {
+    outputFormat = "html"
+    outputDirectory = "$buildDir/dokka"
 }
 
 androidExtensions{

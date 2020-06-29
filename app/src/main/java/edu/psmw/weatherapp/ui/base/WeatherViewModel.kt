@@ -1,5 +1,9 @@
 package edu.psmw.weatherapp.ui.base
 
+/**
+ * ViewModel dla karty z obecną pogodą i lokalizajcją. łączy Model z Widokiem.
+ */
+
 import androidx.lifecycle.ViewModel
 import edu.psmw.weatherapp.data.provider.UnitProvider
 import edu.psmw.weatherapp.data.repository.ForecastRepository

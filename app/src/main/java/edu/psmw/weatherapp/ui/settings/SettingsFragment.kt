@@ -9,8 +9,7 @@ import edu.psmw.weatherapp.R
 class SettingsFragment: PreferenceFragmentCompat(){
 
     /**
-     * Creating SetingsFragment
-     * overrides functions: onCreatePreferences onActivityCreated
+     * Definicja fragmentu dla ustawień użytkownika (trzecia karta aplikacji).
      */
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {

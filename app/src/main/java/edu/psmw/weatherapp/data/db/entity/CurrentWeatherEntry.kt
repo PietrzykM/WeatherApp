@@ -7,6 +7,10 @@ import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 import edu.psmw.weatherapp.data.db.entity.Condition
 
+/**
+ * Klasa definiująca wrtości pobierane z api i wykorzystywane w programie.
+ */
+
 const val CURRENT_WEATHER_ID = 0;
 
 
@@ -19,25 +23,11 @@ data class CurrentWeatherEntry(
     val feelslikeC: Double,
     @SerializedName("feelslike_f")
     val feelslikeF: Double,
-//    @SerializedName("gust_kph")
-//    val gustKph: Double,
-//    @SerializedName("gust_mph")
-//    val gustMph: Double,
-//    val humidity: Int,
-//    @SerializedName("is_day")
-//    val isDay: Int,
-//    @SerializedName("last_updated")
-//    val lastUpdated: String,
-//    @SerializedName("last_updated_epoch")
-//    val lastUpdatedEpoch: Int,
+
     @SerializedName("precip_in")
     val precipIn: Double,
     @SerializedName("precip_mm")
     val precipMm: Double,
-//    @SerializedName("pressure_in")
-//    val pressureIn: Double,
-//    @SerializedName("pressure_mb")
-//    val pressureMb: Double,
     @SerializedName("temp_c")
     val tempC: Double,
     @SerializedName("temp_f")
@@ -47,8 +37,6 @@ data class CurrentWeatherEntry(
     val visKm: Double,
     @SerializedName("vis_miles")
     val visMiles: Double,
-//    @SerializedName("wind_degree")
-//    val windDegree: Int,
     @SerializedName("wind_dir")
     val windDir: String,
     @SerializedName("wind_kph")

@@ -1,5 +1,11 @@
 package edu.psmw.weatherapp.data.provider
 
+/**
+ * Implementacja interfejsu LocationProvider.
+ * Klasa odpowiada za sprawdzanie czy lokalizacja uległa zmianie, czy jest zczytywana lokalizacja
+ * urządzenia bądź jest ona zdefiniowana przez użytkownika.
+ */
+
 import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Context

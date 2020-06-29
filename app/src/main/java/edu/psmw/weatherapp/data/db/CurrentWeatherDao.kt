@@ -1,5 +1,10 @@
 package edu.psmw.weatherapp.data.db
 
+/**
+ * Data Access Object- interfejs dający sablon dla komunikacji pomiędzy danymmi a aplikacją.
+ * CurrentWeatherDao obejmuje dane dostarczane do widoku obecnego dnia.
+ */
+
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert

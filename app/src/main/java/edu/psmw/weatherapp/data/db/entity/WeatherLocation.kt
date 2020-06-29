@@ -8,6 +8,12 @@ import org.threeten.bp.Instant
 import org.threeten.bp.ZoneId
 import org.threeten.bp.ZonedDateTime
 
+/**
+ * Klasa odpowiedzialna za stworzenie Entity z Lokalizacją.
+ *
+ */
+
+
 const val WEATHER_LOCATION_ID = 0
 
 @Entity(tableName = "weather_location")

@@ -1,5 +1,9 @@
 package edu.psmw.weatherapp.ui
 
+/**
+ * Klasa odpowiadająca za sprawdzanie lokalizacji w odpowiednich interwałach czasowych
+ */
+
 import android.annotation.SuppressLint
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
